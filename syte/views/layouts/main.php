@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Syte on Github: https://github.com/rigoneri/syte/ -->
   <meta charset="utf-8" />
   <meta name="description" content="Site pessoal do programador web Tarcísio Gruppi [TXGruppi]" />
   <meta name="keywords" content="Tarcísio Gruppi, txgruppi, developer, programador" />
