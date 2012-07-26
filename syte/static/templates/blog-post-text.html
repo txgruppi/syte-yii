@@ -1,6 +1,6 @@
 <article id="{{ id }}">
   <hgroup>
-    <h2><a href="{{ base_url }}/post/{{ id }}">{{ title }}&nbsp;</a></h2>
+    <h2><a href="/post/{{ id }}">{{ title }}&nbsp;</a></h2>
     <h3><a href="#{{ id }}">{{ formated_date }}</a></h3>
   </hgroup>
   {{{ body }}}
@@ -9,13 +9,13 @@
     <h4>Tags</h4>
     <ul class="tags">
       {{#each tags}}
-      <li><a href="{{ ../base_url }}/tags/{{ this }}">{{ this }}</a></li>
+      <li><a href="/tags/{{ this }}">{{ this }}</a></li>
       {{/each}}
     </ul>
     {{/if}}
     {{#if disqus_enabled }}
     <div id="disqus_thread" class="disqus-thread">
-      <a href="{{ base_url }}/post/{{ id }}#disqus_thread" class="comments"></a>
+      <a href="/post/{{ id }}#disqus_thread" class="comments"></a>
     </div>
     {{/if}}
   </footer>
