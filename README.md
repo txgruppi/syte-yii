@@ -13,7 +13,7 @@ This is a Yii Framework module based on [Syte](https://github.com/rigoneri/syte/
 array(
  'components' => array(
    'syte' => array(
-     'class' => 'syte.components.SyteApplicationComponents',
+     'class' => 'syte.components.SyteApplicationComponent',
    ),
  ),
 );

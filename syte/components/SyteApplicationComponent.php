@@ -1,6 +1,6 @@
 <?php
 
-class SyteApplicationComponents extends CApplicationComponent {
+class SyteApplicationComponent extends CApplicationComponent {
   public $installed;
   public $compressRevisionNumber;
   public $tumblrBlogUrl;
