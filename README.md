@@ -6,8 +6,10 @@ This is a Yii Framework module based on [Syte](https://github.com/rigoneri/syte/
 
 1. Download the package [here](https://github.com/TXGruppi/syte-yii/zipball/master)
 2. Unpack it and copy the syte folder to `your_web_app/protected/modules/`
-3. Add to `modules` array in the `your_web_app/protected/config/main.php`:
-```php
+3. Add the `syte` module to `modules` array in the `your_web_app/protected/config/main.php`
+4. Add to `components` array:
+
+```
 array(
  // ...
  'modules' => array(
@@ -18,4 +20,5 @@ array(
  // ...
 );
 ```
-4. Open `http://localhost/your_web_app/?r=syte` and follow the installation instructions
+
+5. Open `http://localhost/your_web_app/?r=syte` and follow the installation instructions
