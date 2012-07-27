@@ -9,15 +9,13 @@ This is a Yii Framework module based on [Syte](https://github.com/rigoneri/syte/
 3. Add the `syte` module to `modules` array in the `your_web_app/protected/config/main.php`
 4. Add to `components` array:
 
-```
+```php
 array(
- // ...
- 'modules' => array(
+ 'components' => array(
    'syte' => array(
      'class' => 'syte.components.SyteApplicationComponents',
    ),
  ),
- // ...
 );
 ```
 
