@@ -51,7 +51,10 @@ function setupLastfm(url, el) {
             lastfm_data.user_info.user.formatted_register_date = moment(lastfm_data.user_info.user.registered['#text'], 'YYYY-MM-DD HH:mm').format('MM/DD/YYYY');
             
             $.each(lastfm_data.recenttracks.recenttracks.track, function(i, t) {
+              if (t && t.date && t.date['#text'])
                 t.formatted_date = moment.utc(t.date['#text'], 'DD MMM YYYY, HH:mm').fromNow();
+              else
+                t.formatted_date = moment().fromNow();
             });
 
             $(template(lastfm_data)).modal().on('hidden', function () {
